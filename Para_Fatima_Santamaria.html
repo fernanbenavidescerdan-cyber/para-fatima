@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Fatima Santamaria</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif}
+body{background:#c4add7;color:#302342;overflow-x:hidden}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;position:relative}
+.card{width:min(900px,96vw);min-height:min(900px,94vh);position:relative;border:4px solid #7a4d9c;border-radius:28px;background:linear-gradient(145deg,#eadcf2,#cdb4df);box-shadow:0 18px 55px rgba(54,25,72,.28);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.card:before,.card:after{content:"";position:absolute;inset:18px;border:2px solid rgba(122,77,156,.7);border-radius:20px;pointer-events:none}
+.decor{position:absolute;font-size:clamp(42px,7vw,75px);filter:drop-shadow(0 5px 5px rgba(50,20,60,.2));z-index:1}
+.sunflower{top:28px;left:28px} .block{top:30px;right:30px} .minion{bottom:30px;right:32px} .heart{bottom:30px;left:32px;font-size:clamp(45px,7vw,70px)}
+.sparkle{position:absolute;color:#7950a2;font-size:28px}
+.s1{top:20%;left:18%} .s2{top:18%;right:20%} .s3{bottom:22%;left:18%} .s4{bottom:19%;right:18%}
+h1{font-size:clamp(28px,6vw,62px);margin:0 0 45px;color:#5b2d7d;font-style:italic;z-index:2}
+h1 span{display:block;font-size:1.45em;margin-top:8px}
+.open{z-index:3;border:5px solid #ff57c7;background:radial-gradient(circle at 35% 30%,#fff4a8,#f7c928 48%,#d99a09);width:180px;height:180px;border-radius:50%;font-size:32px;font-weight:bold;color:#63327c;cursor:pointer;box-shadow:0 0 0 7px rgba(255,87,199,.15),0 10px 35px rgba(255,72,196,.42),inset 0 3px 12px rgba(255,255,255,.7);transition:.25s transform}
+.open:hover{transform:scale(1.06)} .open:active{transform:scale(.98)}
+.open .star{display:block;font-size:22px;margin-top:5px}
+.hidden{display:none!important}
+.letter-screen{min-height:100vh;padding:28px 14px;background:linear-gradient(135deg,#9b88b1,#77668f);display:flex;justify-content:center}
+.letter{width:min(950px,96vw);background:linear-gradient(135deg,#b7a3c9,#9d8ab1);border:3px solid #e7bd52;box-shadow:0 15px 50px rgba(32,18,45,.35);padding:clamp(38px,6vw,72px);position:relative;color:#241c35}
+.letter:before{content:"";position:absolute;inset:16px;border:2px solid #e7bd52;pointer-events:none}
+.corner{position:absolute;color:#f5cc58;line-height:1;z-index:1}
+.tl{top:15px;left:18px;font-size:38px} .tr{top:15px;right:18px;font-size:64px}
+.bl{bottom:15px;left:18px;font-size:64px} .br{bottom:15px;right:18px;font-size:38px}
+.stars{position:absolute;color:#f8d76d;font-size:22px;letter-spacing:10px}
+.ts{top:28px;left:90px} .rs{top:105px;right:45px} .bs{bottom:45px;right:75px} .ls{bottom:110px;left:45px}
+.letter-content{position:relative;z-index:2;max-width:790px;margin:auto;font-size:clamp(16px,2vw,21px);line-height:1.7;font-style:italic}
+.letter-content p{margin:0 0 22px}
+.back{display:block;margin:25px auto 0;border:2px solid #e7bd52;background:transparent;color:#f8e4a0;border-radius:999px;padding:10px 22px;cursor:pointer;font-size:16px}
+@media(max-width:600px){.card{min-height:92vh}.decor{font-size:42px}.open{width:145px;height:145px;font-size:26px}h1{margin-bottom:35px}.letter{padding:45px 27px}.letter-content{font-size:16px;line-height:1.6}.letter:before{inset:10px}}
+</style>
+</head>
+<body>
+<section id="home" class="screen">
+  <div class="card">
+    <div class="decor sunflower">🌻</div>
+    <div class="decor block">🟩</div>
+    <div class="decor minion">💛</div>
+    <div class="decor heart">🤍</div>
+    <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
+    <div class="sparkle s3">✦</div><div class="sparkle s4">✧</div>
+    <h1>para<span>Fatima Santamaria</span></h1>
+    <button class="open" onclick="openLetter()">Abrir<span class="star">✦</span></button>
+  </div>
+</section>
+
+<section id="letter" class="letter-screen hidden">
+  <article class="letter">
+    <div class="corner tl">✦</div><div class="corner tr">☀</div>
+    <div class="corner bl">☀</div><div class="corner br">✦</div>
+    <div class="stars ts">✦ ✧ ✦</div><div class="stars rs">✧ ✦</div>
+    <div class="stars bs">✦ ✧ ✦</div><div class="stars ls">✧ ✦</div>
+    <div class="letter-content"><p>Estimada Fatima:</p><p>No sé cómo empezar esto, sinceramente, pero sé que quiero decirte algo.</p><p>Hoy, en la salida, como te conté, estuvimos hablando de la vida y, bueno… quería comentarte y decirte que me gustas.</p><p>No sé la fecha exacta ni desde qué momento, pero sí sé que me gustas, y mucho. No quiero que te sientas presionada ni tampoco quiero que me correspondas. Quiero que sepas que no quiero lastimarte ni hacerte dudar, porque sé que estás en una relación.</p><p>Solo sé que estos sentimientos que siento iban a salir tarde o temprano. Después de tantas coincidencias que tuvimos, hasta yo sentía que era una señal, aunque supongo que quizá solo eso lo sentía yo.</p><p>Te escribo esto porque quiero que sepas que quiero verte feliz. Sé que todos tenemos problemas, y sé que tú también los tienes, tal vez muchos, pero si estás feliz, yo estaré bien.</p><p>Creo que me volví loco aguantando esto, pero, para ser sincero… ahora me siento bien.</p><p>Eres una gran chica, Fatima. Incluso hoy me preguntaron qué me gustaba de ti y no supe qué decir. Me quedé como tres minutos pensando en todo lo que eres.</p><p>Quiero que sepas que cuando te miro me siento más tranquilo, más seguro. Sé que habrá gente con el mismo color de ojos que tú, pero también sé que ese brillo que tienes es lo que siempre te hará especial para mí.</p><p>Como tu cabello brilla bajo el sol, incluso tus ojos se ponen de un marrón más claro cuando el sol está presente. A veces incluso los veía de color ámbar cuando la luz brillaba sobre ellos. Podría jurar por Dios que me quedaría horas viéndote y admirándote.</p><p>No quiero que te sientas presionada ni mal por mí, porque yo soy quien está desahogándose y liberándose de esta gran emoción que tengo.</p><p>Tal vez no tenga buena memoria por lo de mi cabeza y todo eso que ya sabes, pero siempre quiero que sepas que te recordaré.</p><p>Sigue siendo la chica que eres, Fatima. Aunque a veces te sientas aburrida, perdida o simplemente no sepas cómo sentirte, no te rindas nunca. Sigue tus sueños y espero que seas feliz.</p><p>Dios te bendiga mucho, siempre, Fatima.</p><p>Gracias por todo. Y no dejes que el miedo te haga frenar en algunas cosas. Tienes que ser fuerte. Quiero que seas feliz.</p><p>Sé que tal vez hablaremos, tal vez nos veremos otra vez, pero quiero que sepas que yo respetaré tus límites y los míos, porque no quiero que te sientas incómoda. Si tu decisión es irte, cambiarte de sitio, dejar de hablarme o cualquier otra cosa que decidas hacer, lo entenderé y lo comprenderé.</p><p>Espero que entiendas que esta carta no es para hacerte sentir mal ni para hacerte pensar demasiado. Solo quería que supieras lo que sentía por ti.</p><p>Dios te bendiga, Fatima. Y, si me permites decirlo, porque no sé si algún día pasará, te mando un fuerte abrazo. Cuídate mucho y asegúrate de sonreír. Eres preciosa estés como estés, pero, sobre todo, siempre sé tú misma, sin miedo a los demás.</p><p>Adiós, Fatima.</p><p>Espero que entiendas mi mensaje y te pido perdón por no haberte contado esto antes. Y posiblemente, cuando leas esto, deje el celular todo el día.</p></div>
+    <button class="back" onclick="goBack()">Volver</button>
+  </article>
+</section>
+
+<script>
+function openLetter(){
+  document.getElementById('home').classList.add('hidden');
+  document.getElementById('letter').classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function goBack(){
+  document.getElementById('letter').classList.add('hidden');
+  document.getElementById('home').classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
